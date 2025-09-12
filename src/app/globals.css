@@ -20,10 +20,12 @@ body {
 }
 
 :root {
-  --primary-color: #013134;
-  --secondary-color: #fc841c;
+  --primary-color: #ffff;
+  --secondary-color: #000000;
+  --secondary-color-transparent: rgba(0, 0, 0, 0.2);
   --light-color: #fed366;
   --warm-color: #de4d0e;
+  --warm2-color: #fc841c;
   --cold-color: #fee8b7;
   --title-font: "poppins";
   --otherTitle-font: "gotcha";

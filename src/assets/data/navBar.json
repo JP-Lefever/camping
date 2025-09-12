@@ -1,0 +1,32 @@
+[
+  {
+    "id" : 1,
+    "label" : "Accueil",
+    "link" : "/"
+  },
+  {
+    "id" : 2,
+    "label" : "Le camping",
+    "link" : "/camping"
+  },
+  {
+    "id" : 3,
+    "label" : "Les hebergements",
+    "link" : "/hebergement"
+  },
+  {
+    "id" : 4,
+    "label" : "Les services",
+    "link" : "/services"
+  },
+  {
+    "id" : 5,
+    "label" : "Que faire ?",
+    "link" : "/tourisme"
+  },
+  {
+    "id" : 6,
+    "label" : "Contact",
+    "link" : "/contact"
+  }
+]
