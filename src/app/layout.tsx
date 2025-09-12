@@ -1,4 +1,5 @@
 import React from "react";
+import "./globals.css"
 
 
 export default function RootLayout({
@@ -7,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body >
         {children}
       </body>
