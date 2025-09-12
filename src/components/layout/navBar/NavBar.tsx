@@ -19,12 +19,11 @@ export default function NavBar() {
         <>
             <nav className={styles.nav}>
                 <section>
-                    <figure>
-                        <Image className={styles.logo} src={"/images/logo.jpg"} alt={"logo camping, petite cabane"} width={100} height={100} />
+                    <figure className={styles.figure}>
+                        <Image className={styles.logo} src={"/images/logo.jpg"} alt={"logo camping, petite cabane"} fill={true} />
                     </figure>
                     <article>
                         <Menu className={styles.buttonMenu} size={56} color={"white"} onClick={handleMenu}/>
-
                             <ul className={`${styles.ul} ${openMenu ? styles.open : styles.close }`}>
                                 <li className={styles.headMenu}>
                                     <p className={styles.p}>Menu</p>
