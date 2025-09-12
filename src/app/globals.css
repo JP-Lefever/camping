@@ -10,5 +10,21 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "gotcha";
+  src: url("/fonts/gotcha-regular.ttf");
+}
+@font-face {
+  font-family: "poppins";
+  src: url("/fonts/poppins.ttf");
+}
 
-
+:root {
+  --primary-color: #013134;
+  --secondary-color: #fc841c;
+  --light-color: #fed366;
+  --warm-color: #de4d0e;
+  --cold-color: #fee8b7;
+  --title-font: "poppins";
+  --otherTitle-font: "gotcha";
+}
