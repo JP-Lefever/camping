@@ -8,6 +8,11 @@
     gap: 10em;
     font-family: var(--title-font),sans-serif;
     z-index: 10;
+    @media screen and (max-width: 568px){
+        gap:0;
+        justify-content: space-between;
+
+    }
 }
 
 .nav section {
@@ -16,47 +21,86 @@
     align-items: center;
 }
 
+
 .nav section:last-child {
     gap: 1em;
+    @media screen and (max-width: 568px){
+        gap: 0.5em;
+    }
+}
+
+.phone {
+    @media screen and (max-width: 568px){
+        width: 5vw;
+    }
 }
 
 
 .nav section:last-child article:first-child {
     display: flex;
-    gap: 1rem;
+    gap: 0.6em;
     font-size: 1.2em;
     align-items: center;
+    @media screen and (max-width: 568px){
+        gap: 0.3em;
+
+    }
 }
 
 .nav section:last-child article:last-child {
     display: flex;
-    gap: 1rem;
+    gap: 0.6em;
     border: 1px solid var(--primary-color);
-    padding : 1em;
+    padding : 0.5em 1em;
     border-radius: 30px;
     font-size: 1.2em;
     align-items: center;
     color: var(--primary-color);
+    @media screen and (max-width: 568px){
+        font-size: 0.6em;
+        padding : 0.4em;
+        gap: 0.5em;
+        margin-right: 0.5em;
+    }
 }
+
+.question{
+    @media screen and (max-width: 568px){
+     width: 5vw;
+    }
+}
+
 .figure {
     position: relative;
     height: 8vh;
     width: 5vw;
+    @media screen and (max-width: 568px){
+        width: 14vw;
+    }
+    @media screen and (min-width: 569px) and (max-width: 1024px){
+        width: 14vw;
+
+    }
 }
 
 .logo{
     object-fit: contain;
+    pointer-events: none;
 }
 
 .link{
     text-decoration: none;
     color: var(--primary-color);
-    font-size: 1.6em;
+    font-size: 1.2em;
     border-right: 3px solid var(--primary-color);
     padding-right: 1rem;
     display: flex;
     align-items: center;
-
+    @media screen and (max-width: 568px){
+        font-size: 0.6em;
+        border-right: 1px solid var(--primary-color);
+        padding-right: 0.5rem;
+    }
 }
 .link:hover{
     text-decoration: underline;
@@ -66,8 +110,21 @@
 .buttonMenu{
     cursor: pointer;
 
+    @media screen and (max-width: 568px){
+        width: 12vw;
+        height: 6vh;
+
+
+    }
 }
 
+.buttonMenu:hover{
+    filter: drop-shadow(0 0 4px var(--secondary-color));
+}
+
+.buttonMenu:active{
+    transform: scale(0.9);
+}
 
 .ul {
     position: absolute;
@@ -79,6 +136,17 @@
     transition : transform .8s ease-in-out;
     transform: translateX(-100%);
     z-index: 100;
+    @media screen and (max-width: 568px){
+        width: 80vw;
+    }
+    @media screen and (min-width: 569px) and (max-width: 1024px){
+        width: 60vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 35vw;
+
+    }
 }
 
 .open{
@@ -96,6 +164,9 @@
     height: 7vh;
     font-size: 1.8em;
     align-items: center;
+    @media screen and (max-width: 568px){
+        font-size: 1.4em;
+    }
 }
 
 .p{
@@ -131,4 +202,7 @@
     color: var(--secondary-color);
     font-size: 1.4em;
     width: 100%;
+    @media screen and (max-width: 568px){
+        font-size: 1.2em;
+    }
 }

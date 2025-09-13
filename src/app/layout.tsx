@@ -3,11 +3,7 @@ import "./globals.css"
 import NavBar from "@/components/layout/navBar/NavBar";
 
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children}: Readonly<{ children: React.ReactNode}>) {
   return (
     <html lang="fr">
       <body >
