@@ -21,12 +21,6 @@
     align-items: center;
 }
 
-.nav section:first-child {
-
-    @media screen and (max-width: 568px){
-        gap: 0.8em;
-    }
-}
 
 .nav section:last-child {
     gap: 1em;
@@ -83,10 +77,15 @@
     @media screen and (max-width: 568px){
         width: 14vw;
     }
+    @media screen and (min-width: 569px) and (max-width: 1024px){
+        width: 14vw;
+
+    }
 }
 
 .logo{
     object-fit: contain;
+    pointer-events: none;
 }
 
 .link{
@@ -110,9 +109,12 @@
 
 .buttonMenu{
     cursor: pointer;
+
     @media screen and (max-width: 568px){
-        width: 2em;
+        width: 12vw;
         height: 6vh;
+
+
     }
 }
 
@@ -136,6 +138,14 @@
     z-index: 100;
     @media screen and (max-width: 568px){
         width: 80vw;
+    }
+    @media screen and (min-width: 569px) and (max-width: 1024px){
+        width: 60vw;
+
+    }
+    @media screen and (min-width: 1024px) and (max-width: 1280px){
+        width: 35vw;
+
     }
 }
 
