@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+
 }
 
 html,
@@ -31,4 +32,5 @@ body {
   --otherTitle-font: "gotcha";
   --main-title-size : 6em;
   --title-size : 2em;
+  --main-title-size-responsive : 3em;
 }

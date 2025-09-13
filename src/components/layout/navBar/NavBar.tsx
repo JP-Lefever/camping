@@ -40,11 +40,11 @@ export default function NavBar() {
                 </section>
                 <section>
                     <article>
-                        <CircleQuestionMark size={48} color={"white"}/>
+                        <CircleQuestionMark className={styles.question} size={48} color={"white"}/>
                         <Link className={styles.link} href="#"> Nous contacter </Link>
                     </article>
                     <article>
-                        <Phone color={"white"} />
+                        <Phone className={styles.phone} size={32} color={"white"} />
                         <p>01.01.01.01.01</p>
                     </article>
                 </section>
