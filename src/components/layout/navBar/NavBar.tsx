@@ -45,7 +45,7 @@ export default function NavBar() {
                     </article>
                     <article>
                         <Phone className={styles.phone} size={24} color={"white"} />
-                        <p>01.01.01.01.01</p>
+                        <p className={styles.numberPhone}>01.01.01.01.01</p>
                     </article>
                 </section>
             </nav>
