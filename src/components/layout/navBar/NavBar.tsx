@@ -23,7 +23,7 @@ export default function NavBar() {
                         <Image className={styles.logo} src={"/images/logo.jpg"} alt={"logo camping, petite cabane"} fill={true} />
                     </figure>
                     <article>
-                        <Menu className={styles.buttonMenu} size={56} color={"white"} onClick={handleMenu}/>
+                        <Menu className={styles.buttonMenu} size={48} color={"white"} onClick={handleMenu}/>
                             <ul className={`${styles.ul} ${openMenu ? styles.open : styles.close }`}>
                                 <li className={styles.headMenu}>
                                     <p className={styles.p}>Menu</p>
@@ -40,11 +40,11 @@ export default function NavBar() {
                 </section>
                 <section>
                     <article>
-                        <CircleQuestionMark className={styles.question} size={48} color={"white"}/>
+                        <CircleQuestionMark className={styles.question} size={28} color={"white"}/>
                         <Link className={styles.link} href="#"> Nous contacter </Link>
                     </article>
                     <article>
-                        <Phone className={styles.phone} size={32} color={"white"} />
+                        <Phone className={styles.phone} size={24} color={"white"} />
                         <p>01.01.01.01.01</p>
                     </article>
                 </section>
