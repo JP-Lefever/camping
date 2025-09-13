@@ -206,3 +206,8 @@
         font-size: 1.2em;
     }
 }
+
+.numberPhone{
+    color: var(--primary-color);
+    text-decoration: none;
+}
