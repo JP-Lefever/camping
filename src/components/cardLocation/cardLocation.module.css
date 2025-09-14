@@ -1,0 +1,70 @@
+.article {
+display: flex;
+flex-direction: column;
+width: 20vw;
+min-height: 70vh;
+border : none;
+background-color: var(--white-main);
+box-shadow:
+0 4px 6px rgba(0, 0, 0, 0.08),
+0 1px 3px rgba(0, 0, 0, 0.06);
+transition: transform 0.2s ease, box-shadow 0.2s ease;
+position: relative;
+cursor : pointer;
+
+@media screen and (max-width: 568px){
+    width: 90vw;
+}
+@media screen and (min-width: 569px) and (max-width: 1024px){
+    width: 45vw;
+
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px){
+    width: 30vw;
+    min-height: 48vw;
+}
+}
+
+.article:hover {
+    transform: scale(1.05);
+
+    box-shadow:
+            0 10px 15px rgba(0, 0, 0, 0.1),
+            0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.figure{
+    position: relative;
+    width : 20vw;
+    height : 45vh;
+    @media screen and (max-width: 568px){
+        width: 90vw;
+    }
+    @media screen and (min-width: 569px) and (max-width: 1024px){
+        width: 45vw;
+    }
+    @media screen and (min-width: 1025px) and (max-width: 1280px){
+        width: 30vw;
+
+    }
+}
+
+.image {
+    object-fit: cover;
+}
+
+.figcaption {
+    font-family: var(--paragraph-font), sans-serif;
+    text-align: center;
+    font-size: 1.4em;
+    margin-top : 0.5em
+}
+
+.link {
+    width: 100%;
+    text-decoration: none;
+    position: absolute;
+    bottom: 1em;
+    text-align: center;
+    font-family: var(--paragraph-font), sans-serif;
+}

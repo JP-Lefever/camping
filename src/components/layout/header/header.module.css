@@ -1,11 +1,8 @@
 .header{
-    background-image: url("/images/mountain.jpg");
+    background-image: url("/images/mountains.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100vh;
     width: 100vw;
     display: flex;
