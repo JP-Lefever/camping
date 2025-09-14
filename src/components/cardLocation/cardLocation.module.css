@@ -15,6 +15,7 @@
     color: var(--secondary-color);
 @media screen and (max-width: 568px){
     width: 90vw;
+    min-height: 90vh;
 }
 @media screen and (min-width: 569px) and (max-width: 1024px){
     width: 45vw;
@@ -74,6 +75,10 @@
     padding: 0.5em 1em;
     background-color: var(--warm2-color);
     color : var(--primary-color);
+    @media screen and (max-width: 568px){
+        width: 60vw;
+
+    }
 }
 
 .ul {

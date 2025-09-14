@@ -23,7 +23,7 @@ export default function CardLocation({dataLocation} : {dataLocation : LocationsP
                         </li>
                     ))}
                 </ul>
-                <Link className={styles.link} href={link}>{button}</Link>
+                <p className={styles.link}>{button}</p>
             </Link>
         </>
     )
