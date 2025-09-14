@@ -1,6 +1,18 @@
+.section {
+    margin : 5vh 0;
+}
+
 .locations {
     display: flex;
-    width: 80vw;
+    width: 70vw;
     justify-content: space-between;
-    margin: 10vh auto;
+    margin: auto;
+}
+
+.h2{
+    text-align: center;
+    margin: 5vh auto;
+    font-family: var(--title-font), sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
 }

@@ -7,12 +7,14 @@ export default function Locations() {
 
     return (
         <>
-        <section className={styles.locations}>
-            {dataLocations.map((location) => (
-                <section key={location.id}>
-                    <CardLocation dataLocation={location} />
-                </section>
-            ))}
+        <section className={styles.section} >
+            <h2 className={styles.h2}>{"Découvrez nos hébergements"}</h2>
+
+            <section  className={styles.locations}>
+                {dataLocations.map((location) => (
+                        <CardLocation key={location.id} dataLocation={location} />
+                ))}
+            </section>
         </section>
         </>
     )
