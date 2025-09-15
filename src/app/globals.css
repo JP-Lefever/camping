@@ -19,6 +19,10 @@ body {
   font-family: "poppins";
   src: url("/fonts/poppins.ttf");
 }
+@font-face {
+  font-family: "varela";
+  src: url("/fonts/VarelaRound-Regular.ttf");
+}
 
 :root {
   --primary-color: #ffff;
@@ -30,6 +34,7 @@ body {
   --cold-color: #fee8b7;
   --title-font: "poppins";
   --otherTitle-font: "gotcha";
+  --paragraph-font: "varela";
   --main-title-size : 6em;
   --title-size : 2em;
   --main-title-size-responsive : 3em;
