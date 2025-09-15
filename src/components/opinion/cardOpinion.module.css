@@ -8,8 +8,12 @@
     border-radius: 12px;
     padding: 1.5rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
-    font-family: var(--paragraph-font, sans-serif);
+    font-family: var(--paragraph-font), sans-serif;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+    @media screen and (max-width: 568px){
+        min-height: 10rem;
+        width: 90vw;
+    }
 }
 
 .card:hover {
