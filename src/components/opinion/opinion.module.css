@@ -1,0 +1,52 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    position: relative;
+    @media screen and  (max-width: 375px) {
+        min-height: 110vh;
+    }
+    @media screen and (min-width: 376px) and (max-width: 768px) {
+        min-height: 85vh;
+    }
+}
+
+.opinionList {
+    width: 80vw;
+    min-height: 35vh;
+    @media screen and (max-width: 568px){
+        width: 90vw;
+
+    }
+    @media screen and (min-width: 569px) and (max-width: 1280px) {
+        width: 95vw;
+    }
+}
+
+.slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5vh 0;
+}
+
+.h2 {
+    font-family: var(--paragraph-font), sans-serif;
+    position : absolute;
+    top : 5vh;
+    font-size: 3em;
+    @media screen and (max-width: 568px){
+        font-size: 2em;
+        text-align: center;
+    }
+}
+
+.h3 {
+    font-family: var(--otherTitle-font), sans-serif;
+    margin-top: 5vh;
+    font-size: 3em;
+    font-weight: lighter;
+    color : var(--warm2-color)
+}

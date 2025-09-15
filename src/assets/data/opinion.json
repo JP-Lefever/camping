@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "author": "Marie L.",
+    "rating": "5/5",
+    "text": "Séjour parfait : emplacement ombragé, équipements propres et personnel aux petits soins. Nous reviendrons sans hésiter.",
+    "date": "2025-08-10",
+    "avatar": "https://i.pravatar.cc/150?u=marie.l"
+  },
+  {
+    "id": 2,
+    "author": "Paul D.",
+    "rating": "4/5",
+    "text": "Très bon rapport qualité/prix, mobile-home confortable. Quelques petites améliorations possibles au petit déjeuner mais globalement top.",
+    "date": "2025-07-22",
+    "avatar": "https://i.pravatar.cc/150?u=paul.d"
+  },
+  {
+    "id": 3,
+    "author": "Agnès R.",
+    "rating": "5/5",
+    "text": "Accueil chaleureux, activités pour enfants excellentes et site bien entretenu. Expérience très positive en famille.",
+    "date": "2025-09-01",
+    "avatar": "https://i.pravatar.cc/150?u=agnes.r"
+  },
+  {
+    "id": 4,
+    "author": "Lucas T.",
+    "rating": "4/5",
+    "text": "Cadre agréable et calme. La piscine est propre et le personnel serviable. Wifi parfois faible mais pas gênant pour nous.",
+    "date": "2025-06-15",
+    "avatar": "https://i.pravatar.cc/150?u=lucas.t"
+  },
+  {
+    "id": 5,
+    "author": "Sophie M.",
+    "rating": "5/5",
+    "text": "Animations variées, emplacements spacieux et sanitaires impeccables. Très bon séjour pour les enfants.",
+    "date": "2025-08-28",
+    "avatar": "https://i.pravatar.cc/150?u=sophie.m"
+  },
+  {
+    "id": 6,
+    "author": "Olivier B.",
+    "rating": "5/5",
+    "text": "Cadre naturel magnifique, équipe professionnelle et installations neuves. Un vrai coup de cœur pour les balades alentour.",
+    "date": "2025-07-05",
+    "avatar": "https://i.pravatar.cc/150?u=olivier.b"
+  },
+  {
+    "id": 7,
+    "author": "Camille F.",
+    "rating": "4/5",
+    "text": "Séjour agréable, personnel réactif. Quelques nuisances ponctuelles le soir mais l'ensemble reste très satisfaisant.",
+    "date": "2025-05-30",
+    "avatar": "https://i.pravatar.cc/150?u=camille.f"
+  },
+  {
+    "id": 8,
+    "author": "Jean P.",
+    "rating": "5/5",
+    "text": "Très bon accueil, emplacement proche des activités et restauration de qualité. Parfait pour un week-end détente.",
+    "date": "2025-08-12",
+    "avatar": "https://i.pravatar.cc/150?u=jean.p"
+  },
+  {
+    "id": 9,
+    "author": "Laura G.",
+    "rating": "5/5",
+    "text": "Expérience parfaite pour un séjour en couple : calme, confort et petit-déjeuner délicieux. Recommandé !",
+    "date": "2025-09-07",
+    "avatar": "https://i.pravatar.cc/150?u=laura.g"
+  },
+  {
+    "id": 10,
+    "author": "Marc E.",
+    "rating": "4/5",
+    "text": "Bon séjour global, emplacement pratique et équipes disponibles. Quelques détails à améliorer mais très satisfaisant.",
+    "date": "2025-04-18",
+    "avatar": "https://i.pravatar.cc/150?u=marc.e"
+  }
+]
