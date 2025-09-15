@@ -1,0 +1,54 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 22rem;
+    min-height: 16rem;
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    font-family: var(--paragraph-font, sans-serif);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 14px rgba(0, 0, 0, 0.12);
+}
+
+.card article{
+    display: flex;
+    justify-content: space-between;
+}
+
+.figure {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.card figcaption {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: var(--secondary-color, #013134);
+}
+
+.card p {
+    margin: 0.2rem 0;
+    line-height: 1.4;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.card p:last-of-type {
+    font-size: 0.8rem;
+    color: #777;
+}
