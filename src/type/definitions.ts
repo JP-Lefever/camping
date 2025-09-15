@@ -7,9 +7,13 @@ export type LocationsProps = {
     characteristics ? : characteristicsProps [];
 }
 
-export interface characteristicsProps  {
+export type characteristicsProps = {
     id: number;
     label?: string;
+}
 
-    
+export type ServicesProps  = {
+    id : number;
+    label : string;
+    image : string;
 }

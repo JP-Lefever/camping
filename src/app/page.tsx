@@ -1,5 +1,6 @@
 import Header from "@/components/layout/header/Header";
 import Locations from "@/components/locations/Locations";
+import Services from "@/components/services/Services";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
     <>
          <Header />
          <Locations/>
-
+        <Services/>
     </>
 
   );
