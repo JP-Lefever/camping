@@ -17,3 +17,12 @@ export type ServicesProps  = {
     label : string;
     image : string;
 }
+
+export type OpinionsProps = {
+    id: number;
+    author : string;
+    rating : string;
+    text : string;
+    date : string;
+    avatar : string;
+}
