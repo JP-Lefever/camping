@@ -1,0 +1,78 @@
+.section {
+
+
+}
+
+.article {
+    background-image: url("/images/cele.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--title-font), sans-serif;
+    font-size: var(--title-size);
+    color : var(--primary-color);
+    text-shadow: 2px 2px 2px var(--secondary-color);
+}
+
+.articlePres {
+    width : 60vw;
+    margin: 0 auto;
+    padding: 5vh 0;
+    line-height: 1.8em;
+    font-family: var(--paragraph-font), sans-serif;
+}
+
+.articlePres h2{
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: var(--title-font), sans-serif;
+    font-size: 3em;
+}
+
+.articlePres h3 {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: var(--otherTitle-font), sans-serif;
+    font-size: 3em;
+    font-weight: lighter;
+    color : var(--warm2-color)
+}
+
+.markdown li{
+    margin-left : 2em;
+}
+
+.markdown strong{
+    display: inline-block;
+    margin: 1vh 0 ;
+}
+
+.list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    margin-top: 10vh;
+}
+
+.infoList {
+    margin-bottom: 2vh;
+}
+
+.sectionInfo{
+    background-color: var(--cold-color);
+    min-height: 70vh;
+
+}
+
+.video {
+    width: 50%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    border-radius: 8px;
+    margin : 5vh auto;
+}
