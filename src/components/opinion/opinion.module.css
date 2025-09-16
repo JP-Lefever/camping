@@ -33,10 +33,11 @@
 }
 
 .h2 {
-    font-family: var(--paragraph-font), sans-serif;
+    font-family: var(--title-font), sans-serif;
     position : absolute;
     top : 5vh;
     font-size: 3em;
+    font-weight: lighter;
     @media screen and (max-width: 568px){
         font-size: 2em;
         text-align: center;
