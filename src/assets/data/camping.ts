@@ -28,7 +28,7 @@ Et quand vous préférez rester sur place, laissez-vous porter par l’ambiance 
 }
 
 export const infoCamping = {
-    title : "Info Pratiques",
+    title : "Infos Pratiques",
     address : `**Adresse :** Glamping spot, 1 rue du paradis, 46100 Figeac`,
     opening : `**Date d'ouverture :** 01/04/2025`,
     closing : `**Date de fermeture :** 30/09/2025`,
