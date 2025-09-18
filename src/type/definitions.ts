@@ -52,11 +52,38 @@ export type InfosProps = {
     checkoutPitch: string;
 }
 
+export type characteristicsMhProps = {
+    id: number;
+    image : string;
+    label: string;
+}
+
+
 export type MhProps = {
     id : number;
     title : string;
     image : string;
+    arrayImage : ArrayImagesProps[];
     slug : string;
     button : string;
-    characteristics ? : characteristicsProps [];
+    characteristics : characteristicsMhProps [];
+}
+
+export type ArrayImagesProps = {
+    id : number;
+    image : string;
+    label : string;
+}
+
+export type InfoMhProps = {
+    id: number;
+    label: string;
+    image : string;
+    detail: string;
+}
+
+export type DetailMhProps = {
+    id: number;
+    slug: string;
+    characteristics: InfoMhProps[];
 }
