@@ -1,3 +1,18 @@
+.link {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    color : var(--secondary-color);
+    font-family: var(--paragraph-font),sans-serif;
+    margin-bottom: 2vh;
+    text-decoration: none;
+
+
+}
+
+.link:hover {
+    text-decoration: underline;
+}
 
 .articleImages {
     width : 50vw;
@@ -78,3 +93,4 @@
 .articleDetail li p {
     font-family: var(--paragraph-font), sans-serif;
 }
+

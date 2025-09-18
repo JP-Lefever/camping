@@ -7,6 +7,7 @@ import Link from "next/link";
 import dataNav from "@/assets/data/navBar.json"
 
 
+
 export default function NavBar() {
 
     const [openMenu, setOpenMenu] = useState<boolean>(false)
@@ -19,9 +20,11 @@ export default function NavBar() {
         <>
             <nav className={styles.nav}>
                 <section>
-                    <figure className={styles.figure}>
-                        <Image className={styles.logo} src={"/images/logo.jpg"} alt={"logo camping, petite cabane"} fill={true} />
-                    </figure>
+                    <Link href={"/"}>
+                        <figure className={styles.figure}>
+                            <Image  className={styles.logo} src={"/images/logo.jpg"} alt={"logo camping, petite cabane"} fill={true} />
+                        </figure>
+                    </Link>
                     <article>
                         <Menu className={styles.buttonMenu} size={48} color={"white"} onClick={handleMenu}/>
                             <ul className={`${styles.ul} ${openMenu ? styles.open : styles.close }`}>

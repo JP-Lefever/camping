@@ -2,7 +2,8 @@ import styles from "./page.module.css"
 import {dataMh, dataDetailMh} from "@/assets/data/mh";
 import Carousel from "@/components/ui/carousel/Carousel";
 import Image from "next/image";
-
+import Link from "next/link";
+import { MoveLeft } from 'lucide-react';
 
 export default async function DetailMhPage(props : {params : Promise<{slug : string}>}){
 
@@ -19,6 +20,10 @@ export default async function DetailMhPage(props : {params : Promise<{slug : str
         {mh.map((m)=>(
             <section className={styles.section}  key={m.id}>
                 <article className={styles.articleImages}>
+                    <Link className={styles.link}  href={"/hebergements/mh"}>
+                        <MoveLeft color={"#fc841c"}/>
+                        <p>{"Retour a la liste des mobil homes"}</p>
+                    </Link>
                     <Carousel images={m.arrayImage}/>
                 </article>
                 <article className={styles.articlePres} >

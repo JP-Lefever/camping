@@ -52,9 +52,9 @@ export const dataMh : MhProps[] = [
     {
         id : 2,
         title : "Mobil'home Toscane",
-        image : "/images/mh/mh.jpg",
+        image : "/images/mh/toscane.webp",
         arrayImage: [
-            { "id": 1, "image": "/images/mh/mh.jpg", "label": "mh" },
+            { "id": 1, "image": "/images/mh/toscane.webp", "label": "mh" },
             { "id": 2, "image": "/images/mh/salon.jpg", "label": "salon" },
             { "id": 3, "image": "/images/mh/cuisine.jpg", "label": "cuisine" },
             { "id": 4, "image": "/images/mh/sdb.jpg", "label": "sdb" },
@@ -100,9 +100,9 @@ export const dataMh : MhProps[] = [
     {
         id : 3,
         title : "Mobil'home Premium",
-        image : "/images/mh/mh.jpg",
+        image : "/images/mh/premium.png",
         arrayImage: [
-            { "id": 1, "image": "/images/mh/mh.jpg", "label": "mh" },
+            { "id": 1, "image": "/images/mh/premium.png", "label": "mh" },
             { "id": 2, "image": "/images/mh/salon.jpg", "label": "salon" },
             { "id": 3, "image": "/images/mh/cuisine.jpg", "label": "cuisine" },
             { "id": 4, "image": "/images/mh/sdb.jpg", "label": "sdb" },
