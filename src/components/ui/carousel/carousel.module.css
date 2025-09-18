@@ -7,13 +7,17 @@
 
 .mainImage {
     object-fit: cover;
+
 }
 
 .thumbSwiper {
     margin-top: 1vh;
     width: 80%;
     height: 10vh;
-
+    @media screen and (max-width: 568px){
+        width : 100%;
+        height: 12vh;
+    }
 }
 
 .thumbImage {
@@ -22,6 +26,12 @@
     opacity: 0.6;
     cursor: pointer;
     width: 7vw;
+    @media screen and (max-width: 568px){
+        width : 25vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width : 15vw;
+    }
 }
 
 .thumbImage:hover {

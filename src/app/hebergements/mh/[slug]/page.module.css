@@ -2,7 +2,12 @@
 .articleImages {
     width : 50vw;
     margin : 10vh auto 5vh auto;
-
+    @media screen and (max-width: 568px){
+        width : 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width : 80vw;
+    }
 }
 
 .h1 {
@@ -14,6 +19,12 @@
 .articlePres {
     width: 50vw;
     margin : 5vh auto;
+    @media screen and (max-width: 568px){
+        width : 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width : 80vw;
+    }
 }
 
 .articlePres ul{
@@ -24,6 +35,9 @@
     gap: 2em;
     font-family: var(--title-font), sans-serif;
     color : grey;
+    @media screen and (max-width: 568px){
+        grid-template-columns: 1fr 1fr ;
+    }
 }
 
 .articlePres ul li {
@@ -46,6 +60,12 @@
     flex-direction: column;
     gap: 2em;
     font-family: var(--title-font), sans-serif;
+    @media screen and (max-width: 568px){
+        width : 90vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px){
+        width : 80vw;
+    }
 }
 
 .articleDetail li {

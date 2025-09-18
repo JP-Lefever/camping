@@ -32,8 +32,7 @@ export default function Carousel({ images }: { images: ArrayImagesProps[] }) {
                         <Image
                             src={item.image}
                             alt={item.label}
-                            width={1000}
-                            height={500}
+                            fill={true}
                             className={styles.mainImage}
 
                         />
@@ -44,12 +43,16 @@ export default function Carousel({ images }: { images: ArrayImagesProps[] }) {
             <Swiper
                 modules={[FreeMode, Navigation, Thumbs,Autoplay]}
                 onSwiper={setThumbsSwiper}
-                slidesPerView={5}
+                slidesPerView={3}
                 freeMode
                 autoplay ={{delay : 2500, disableOnInteraction: false }}
                 loop={true}
                 watchSlidesProgress
                 className={styles.thumbSwiper}
+                breakpoints={{
+                    768 : {slidesPerView: 4},
+                    1024 : {slidesPerView: 5},
+                }}
             >
                 {images.map((item) => (
                     <SwiperSlide key={item.id}>

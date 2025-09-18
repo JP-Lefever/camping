@@ -31,7 +31,7 @@ export default function NavBar() {
                                 </li>
                             {dataNav.map((item)=>
                                 <li className={styles.li} key={item.id}>
-                                    <Link className={styles.linkMenu} href={item.link}>{item.label}</Link>
+                                    <Link onClick={handleMenu} className={styles.linkMenu} href={item.link}>{item.label}</Link>
                                 </li>
                             )}
                             </ul>
