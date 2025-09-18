@@ -1,4 +1,6 @@
-export const presCamping = {
+import {CampingProps, InfosProps} from "@/type/definitions";
+
+export const presCamping : CampingProps= {
     titlePres : "Glamping Spot",
     subtitle : "Bienvenue à Glamping Spot",
     slogan : "Votre parenthèse nature dans le Lot",
@@ -27,7 +29,7 @@ Et quand vous préférez rester sur place, laissez-vous porter par l’ambiance 
   `
 }
 
-export const infoCamping = {
+export const infoCamping : InfosProps= {
     title : "Infos Pratiques",
     address : `**Adresse :** Glamping spot, 1 rue du paradis, 46100 Figeac`,
     opening : `**Date d'ouverture :** 01/04/2025`,
