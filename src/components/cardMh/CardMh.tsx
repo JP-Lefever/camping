@@ -5,13 +5,13 @@ import Link from "next/link";
 
 
 
-export default function CardMh({dataMh} : {dataMh : MhProps }) {
+export default function CardMh({dataMh, page} : {dataMh : MhProps, page : string }) {
 
     const {title, image, button, slug, characteristics} = dataMh;
 
     return (
         <>
-            <Link href={`/hebergements/mh/${slug}`} className={styles.article}>
+            <Link href={`/hebergements/${page}/${slug}`} className={styles.article}>
                 <figure className={styles.figure}>
                     <Image className={styles.image} src={image} alt={title} fill={true}/>
                 </figure>
