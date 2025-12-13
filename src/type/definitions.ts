@@ -66,7 +66,7 @@ export type MhProps = {
     arrayImage : ArrayImagesProps[];
     slug : string;
     button : string;
-    characteristics : characteristicsMhProps [];
+    characteristics : characteristicsMhProps[];
 }
 
 export type ArrayImagesProps = {
@@ -86,4 +86,11 @@ export type DetailMhProps = {
     id: number;
     slug: string;
     characteristics: InfoMhProps[];
+}
+
+export type PitchesProps = {
+    id: number;
+    title : string;
+    arrayImage : ArrayImagesProps[];
+    characteristics : characteristicsMhProps[];
 }
