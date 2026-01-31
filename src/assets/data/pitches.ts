@@ -1,4 +1,4 @@
-import {PitchesProps} from "@/type/definitions";
+import {DetailMhProps, InfoMhProps, PitchesProps} from "@/type/definitions";
 
 export const dataPitches  : PitchesProps = {
     id : 1,
@@ -22,7 +22,7 @@ export const dataPitches  : PitchesProps = {
         },
         {
             id : 3,
-            image : "/images/mh/picto/douche.png",
+            image : "/images/mh/picto/elec.png",
             label : "Avec éléctricité"
         },
         {
@@ -32,3 +32,13 @@ export const dataPitches  : PitchesProps = {
         }
     ]
 }
+
+
+export const dataDetailPitches : InfoMhProps  = {
+                id : 8,
+                label : "Services en option",
+                image : "/images/mh/picto/euros.png",
+                detail : "Frigo, Connexion WiFi (1 code pour 1 appareil), Malle du camping, Location de barbecue (sur place)"
+
+
+    }
