@@ -1,4 +1,4 @@
-import {DetailMhProps, InfoMhProps, PitchesProps} from "@/type/definitions";
+import {InfoMhProps, PitchesProps} from "@/type/definitions";
 
 export const dataPitches  : PitchesProps = {
     id : 1,
@@ -39,6 +39,5 @@ export const dataDetailPitches : InfoMhProps  = {
                 label : "Services en option",
                 image : "/images/mh/picto/euros.png",
                 detail : "Frigo, Connexion WiFi (1 code pour 1 appareil), Malle du camping, Location de barbecue (sur place)"
-
 
     }
