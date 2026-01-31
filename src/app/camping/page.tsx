@@ -10,7 +10,7 @@ export default function CampingPage(){
 
     return(
         <>
-            <section className={styles.section}>
+            <section >
                 <article className={styles.article}>
                     <h1>{titlePres}</h1>
                 </article>
