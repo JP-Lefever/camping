@@ -16,6 +16,7 @@ export type ServicesProps  = {
     id : number;
     label : string;
     image : string;
+    detail : string;
 }
 
 export type OpinionsProps = {
