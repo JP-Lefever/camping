@@ -9,7 +9,7 @@ export default function LocationsPage(){
 
     return (
         <>
-            <section  >
+            <section>
                 <article className={styles.article}>
                     <h1>{presCamping.titlePres}</h1>
                 </article>
