@@ -32,69 +32,82 @@ export default function ContactForm() {
 
     return (
         <>
-            <section>
-                <h1>{"Contact"}</h1>
-                <ul>Pour toute demande d'informations ou réservation, contactez-nous via ce formulaire ou :
-                    <li>0101010101</li>
-                    <li>camping@camping.com</li>
-                </ul>
-            </section>
-            <section>
-                <form onSubmit={handleSubmit(onSubmit)}>
-                    <fieldset>
-                        <label htmlFor={"lastname"}>Nom</label>
-                        <input
-                            type={"text"}
-                            {...register("lastname",
-                        {
-                            required: errorsMessages.required,
-                        }
-                        )}
-                        />
-                        {errors.lastname && (<p className={styles.p}>{errors.lastname.message}</p>)}
-                        <label htmlFor={"firstname"}>Prénom</label>
-                        <input type={"text"} {...register("firstname", {
-                            required : errorsMessages.required
-                        })}/>
-                        {errors.firstname && (<p className={styles.p}>{errors.firstname.message}</p>)}
-                        <label htmlFor={"email"}>{"Email"}</label>
-                        <input type={"email"} {...register("email", {
-                        required : errorsMessages.required
-                        })}/>
-                        <label htmlFor={"phone"}>{"Téléphone"}</label>
-                        <input type={"text"} {...register("phone", {
-                            required: errorsMessages.required
-                        })}/>
-                    </fieldset>
-                    <fieldset>
+            <section className={styles.section}>
+                <article className={styles.article}>
+                    <h1>{"Contact"}</h1>
+                    <ul>Pour toute demande d'informations ou réservation, contactez-nous via ce formulaire ou au:
+                        <li>0101010101</li>
+                        <li>camping@camping.com</li>
+                    </ul>
+                </article>
+                <article>
+                    <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
+                        <fieldset className={styles.fieldset}>
+                            <input
+                                type={"text"}
+                                placeholder={"Nom*"}
+                                {...register("lastname",
+                            {
+                                required: errorsMessages.required,
+                            }
+                            )}
+                            />
+                            {errors.lastname && (<p className={styles.p}>{errors.lastname.message}</p>)}
 
-                        <select onChange={handleSelectChange}>
-                            <option value={"null"}>{"Veuillez selectionner un champ"}</option>
-                            <option value={"reservation"}>{"Réservation"}</option>
-                            <option value={"information"}>{"Information camping"}</option>
-                            <option value={"autre"}>{"Autre"}</option>
-                        </select>
-                        {selectValue === "reservation" && (
-                            <>
-                                <label htmlFor={"date"}>{"Dates de séjour du"}</label>
-                                <input type={"date"} {...register("date", {
+                            <input
+                                type={"text"}
+                                placeholder={"Prénom*"}
+                                {...register("firstname", {
+                                required : errorsMessages.required
+                            })}/>
+                            {errors.firstname && (<p className={styles.p}>{errors.firstname.message}</p>)}
+
+                            <input
+                                type={"email"}
+                                placeholder={"Email*"}
+                                {...register("email", {
+                            required : errorsMessages.required
+                            })}/>
+
+                            <input
+                                type={"text"}
+                                placeholder={"Téléphone*"}
+                                {...register("phone", {
                                 required: errorsMessages.required
-                            })} />
-                                <label htmlFor={"date"}>{"Au"}</label>
-                                <input type={"date"} {...register("date", {
+                            })}/>
+                        </fieldset>
+                        <fieldset className={styles.fieldset}>
+                            <select {...register("subject")}
+                                    onChange={handleSelectChange}>
+                                <option value={"null"}>{"Veuillez selectionner un champ*"}</option>
+                                <option value={"reservation"}>{"Réservation"}</option>
+                                <option value={"information"}>{"Information camping"}</option>
+                                <option value={"autre"}>{"Autre"}</option>
+                            </select>
+                            {selectValue === "reservation" && (
+                                <div role={"group"} className={styles.div}>
+                                    <label htmlFor={"arrival"}>{"Dates de séjour du"}</label>
+                                    <input type={"date"} {...register("arrival", {
                                     required: errorsMessages.required
                                 })} />
-                            </>
-                        )}
-                    </fieldset>
-                    <fieldset>
-                        <label htmlFor={"message"}>{"Message"}</label>
-                        <textarea {...register("message", {
-                            required: errorsMessages.required
-                        })}/>
-                    </fieldset>
-                        <button type={"submit"}>Envoyer</button>
-                </form>
+                                    <label htmlFor={"departure"}>{"Au"}</label>
+                                    <input type={"date"} {...register("departure", {
+                                        required: errorsMessages.required
+                                    })} />
+                                </div>
+                            )}
+                        </fieldset>
+                        <fieldset className={styles.fieldset}>
+                            <textarea
+                                className={styles.textarea}
+                                placeholder={"Message*"}
+                                {...register("message", {
+                                required: errorsMessages.required
+                            })}/>
+                        </fieldset>
+                            <button className={styles.button} type={"submit"}>Envoyer</button>
+                    </form>
+                </article>
             </section>
         </>
     )

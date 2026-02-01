@@ -7,7 +7,7 @@ import {ContactProps} from "@/type/definitions";
 export const sendMail = async (data: ContactProps) => {
 
 
-  const {firstname, lastname, email, message} = data;
+  const {firstname, lastname, email, message, subject, arrival, departure, phone} = data;
 
 try {
   const transporter = nodemailer.createTransport({
@@ -27,10 +27,16 @@ try {
     subject: `Nouveau message de ${firstname} ${lastname}`,
     text : `
         Email : ${email}
+        sujet : ${subject}
         Message : ${message}
         `,
     html: `
+        <p>Nom:${lastname}</p>
+        <p>Prénom: ${firstname}</p>
         <p>Email: ${email}</p>
+        <p>Telephone: ${phone}</p>
+        <p>Sujet: ${subject}</p>
+        <p>date de réservation: Du ${arrival} au ${departure} </p>
         <p>Message:</br>${message}</p>
         `,
     replyTo: email,

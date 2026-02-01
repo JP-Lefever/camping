@@ -101,6 +101,8 @@ export type ContactProps = {
     lastname : string;
     firstname : string;
     email : string;
+    arrival : Date;
+    departure : Date;
     phone : string;
     subject : string;
     message : string;
