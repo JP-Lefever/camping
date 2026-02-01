@@ -1,4 +1,5 @@
 "use client"
+import styles from "./activities.module.css"
 import React from "react";
 import {market, randonnees, visites, activites} from "@/assets/data/tourisme"
 import Image from "next/image"
@@ -16,7 +17,7 @@ export default function Activities() {
     return (
         <>
 
-            <article>
+            <article className={styles.article}>
                 <button onClick={handleOpenMenu} type={"button"} value={"market"}><h2>{"Les marchés"}</h2></button>
                 {openMenu === "market" && (
                     market.map((m) => (
@@ -28,22 +29,40 @@ export default function Activities() {
                         ))
                 )}
             </article>
-            <article>
+            <article className={styles.article}>
                 <button onClick={handleOpenMenu} type={"button"} value={"visites"}><h2>{"Les visites"}</h2></button>
                 {openMenu === "visites" && (
-                    <p>salut</p>
+                    visites.map((m) => (
+                        <article key={m.id}>
+                            <h3>{m.title}</h3>
+                            <p>{m.description}</p>
+                            <Image src={m.image} alt={m.title} width={100} height={100} />
+                        </article>
+                    ))
                 )}
             </article>
-            <article>
+            <article className={styles.article}>
                 <button onClick={handleOpenMenu} type={"button"} value={"randonnees"}><h2>{"Les randonnées"}</h2></button>
                 {openMenu === "randonnees" && (
-                    <p>salut</p>
+                    randonnees.map((m) => (
+                        <article key={m.id}>
+                            <h3>{m.title}</h3>
+                            <p>{m.description}</p>
+                            <Image src={m.image} alt={m.title} width={100} height={100} />
+                        </article>
+                    ))
                 )}
             </article>
-            <article>
+            <article className={styles.article}>
                 <button onClick={handleOpenMenu} type={"button"} value={"tourisme"}><h2>{"Les tourisme"}</h2></button>
                 {openMenu === "tourisme" && (
-                    <p>salut</p>
+                    activites.map((m) => (
+                        <article key={m.id}>
+                            <h3>{m.title}</h3>
+                            <p>{m.description}</p>
+                            <Image src={m.image} alt={m.title} width={100} height={100} />
+                        </article>
+                    ))
                 )}
             </article>
 
