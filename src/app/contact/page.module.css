@@ -11,5 +11,9 @@
     font-family: var(--title-font), sans-serif;
     font-size: var(--title-size);
     text-shadow: 2px 2px 2px var(--secondary-color);
+    @media screen and (max-width: 568px){
+        font-size: 1.3em;
+        text-align: center;
+    }
 }
 
