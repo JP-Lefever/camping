@@ -1,5 +1,6 @@
 import styles from "./page.module.css"
 import ContactForm from "@/features/contactForm/components/ContactForm"
+import {presCamping} from "@/assets/data/camping";
 
 export default function ContactPage() {
 
@@ -8,7 +9,7 @@ export default function ContactPage() {
         <>
             <section>
                 <article className={styles.article}>
-                    <h1>Contact</h1>
+                    <h1>{presCamping.titlePres}</h1>
                 </article>
                 <article>
                     <ContactForm/>
