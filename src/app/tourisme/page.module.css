@@ -1,0 +1,39 @@
+.article {
+    background-image: url("/images/cele.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--title-font), sans-serif;
+    font-size: var(--title-size);
+    color : var(--primary-color);
+    text-shadow: 2px 2px 2px var(--secondary-color);
+
+    @media screen and (max-width: 568px){
+        font-size: 1.3em;
+        text-align: center;
+    }
+}
+
+.articlePage {
+    margin : 5vh auto;
+}
+
+.h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--title-font), sans-serif;
+
+}
+
+.h3 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--otherTitle-font), sans-serif;
+    font-weight: lighter;
+    color : var(--warm2-color);
+    margin-bottom: 5vh;
+}

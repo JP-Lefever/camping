@@ -107,3 +107,10 @@ export type ContactProps = {
     subject : string;
     message : string;
 }
+
+export type TourismProps = {
+    id: number;
+    title : string;
+    image : string;
+    description : string;
+}
