@@ -1,0 +1,50 @@
+.buttons {
+    display: flex;
+    width: 60vw;
+    margin : auto;
+
+    justify-content: space-around;
+}
+
+.buttons button {
+    font-family: var(--title-font), sans-serif;
+    width: 10vw;
+    background-color: var(--warm2-color);
+    border: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+.content {
+    width: 60vw;
+    margin : 5vh auto;
+    font-family: var(--title-font), sans-serif;
+}
+
+.div {
+    display: flex;
+    align-items: center;
+    gap : 1em
+}
+
+.figure {
+    width: 20vw;
+    height: 30vh;
+    position: relative;
+}
+
+.figure image{
+    object-fit: contain;
+}
+
+.content article {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.content article h3 {
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}

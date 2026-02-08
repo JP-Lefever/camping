@@ -95,3 +95,22 @@ export type PitchesProps = {
     arrayImage : ArrayImagesProps[];
     characteristics : characteristicsMhProps[];
 }
+
+export type ContactProps = {
+    id : number;
+    lastname : string;
+    firstname : string;
+    email : string;
+    arrival : Date;
+    departure : Date;
+    phone : string;
+    subject : string;
+    message : string;
+}
+
+export type TourismProps = {
+    id: number;
+    title : string;
+    image : string;
+    description : string;
+}
