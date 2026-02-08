@@ -17,3 +17,23 @@
         text-align: center;
     }
 }
+
+.articlePage {
+    margin : 5vh auto;
+}
+
+.h2 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--title-font), sans-serif;
+
+}
+
+.h3 {
+    font-size: 3em;
+    text-align: center;
+    font-family: var(--otherTitle-font), sans-serif;
+    font-weight: lighter;
+    color : var(--warm2-color);
+    margin-bottom: 5vh;
+}
