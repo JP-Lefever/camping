@@ -11,11 +11,23 @@
     font-family: var(--title-font), sans-serif;
     font-size: var(--title-size);
     text-shadow: 2px 2px 2px var(--secondary-color);
+
+    @media screen and (max-width: 568px){
+        font-size: 1.3em;
+        text-align: center;
+    }
+
 }
 
 .articleInfo {
     width: 60vw;
     margin : 5vh auto;
+    @media screen and (max-width: 568px) {
+        width: 95vw;
+    }
+    @media screen and (min-width: 568px) and (max-width: 1024px) {
+        width: 80vw;
+    }
 }
 
 .h2 {
@@ -39,6 +51,10 @@
     flex-wrap: wrap;
     list-style: none;
     gap : 2em;
+    @media screen and (max-width: 568px) {
+      display: flex;
+      flex-direction: column;
+    }
 }
 
 .li{
@@ -51,5 +67,9 @@
     min-height: 20vh;
     font-family: var(--title-font), sans-serif;
     text-align: center;
+
+    @media screen and (max-width: 568px){
+        padding : 0.5em
+    }
 
 }
